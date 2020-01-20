@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- HEAD --------------------------------------------------------------------->
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      {% if page.title == "Home" %}
+        {{ site.title }} &middot; {{ site.tagline }}
+      {% else %}
+        {{ site.title }} &middot; {{ page.title }}
+      {% endif %}
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ "/style/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/style/github-markdown.css" | relative_url }}">
+    
+    <!-- Icons 
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/style/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/style/favicon.ico">
+    -->
+    
+  </head>
+    
+    
+
+<!-- BODY --------------------------------------------------------------------->
+  <body>
+
+
+<!-- MAIN CONTENT ------------------------------------------------------------->
+    <div class="header-bar-wrapper">
+      <div class="header-bar">
+        <!--<a href="{{ site.baseurl }}/" class="header-title">{{ site.title }}</a>-->
+        
+        <div class="header-nav">
+          {% for link in site.header-nav-links %}
+            {% if page.url != link.url %}
+              <a href="{% if link.internal-link %}{{ site.baseurl }}{% endif %}{{ link.url }}" class="header-nav-item">
+              {{ link.text }}</a>
+            {% else %}
+              <span class="header-nav-item active">
+              {{ link.text }}</span>
+            {% endif %}
+            
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+    {{ content }}
+
+  </body>
+</html>

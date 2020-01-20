@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="page-wrap">
+<div class="page">
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="comments">
+    <a class="muut",
+       href="https://muut.com/i/{{ site.muut-forum-title }}/page-discussions/{{ page.title | slugify }}",
+       data-show_title="true",
+       data-show_online="false",
+       data-share="false">
+       Discussion</a>
+  </div>
+</div>
+</div>
+
+<script src="//cdn.muut.com/1/moot.min.js"></script>

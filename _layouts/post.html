@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="page-wrap">
+<div class="post">
+  <a class="anchor" name="top"></a>
+  <div class="content">
+    <div class="post-info">
+        {% if page.author %}{{ page.author }}{% endif %}
+        {{ page.date | date: "%Y-%m-%d" }}
+      </div>
+      <div class="post-title">{{ page.title }}</div>
+
+    {{ content }}
+  
+  </div>
+  
+  <a class="anchor" name="comments"></a>
+  <div class="comments">
+    <a class="muut",
+       href="https://muut.com/i/{{ site.muut-forum-title }}/blog-comments:{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify | truncate: 16, '' }}",
+       title="{{ page.title }} ({{ page.date | date: "%b %-d, %Y" }})",
+       data-show_online="false",
+       data-share="false">
+       Comments
+    </a>  
+  </div>
+</div>
+</div>
+
+<script src="//cdn.muut.com/1/moot.min.js"></script>
+

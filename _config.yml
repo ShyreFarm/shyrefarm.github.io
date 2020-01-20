@@ -1,0 +1,35 @@
+# Site setup
+url:                 http://shyrefarm.github.io
+baseurl:             /
+permalink:           pretty
+
+# Page path setup
+collections:
+  pages:
+    output:          true
+    permalink:       /:path/
+
+# Pagination
+paginate: 5
+plugins:
+  - jekyll-paginate
+excerpt_separator:   <!--read more-->
+
+# Header
+title:               Shyre Farm
+description:         
+header-bar-color:	   "cornflowerblue"
+header-nav-links:
+
+ - text: Blog
+   url: /
+   internal-link: yes
+
+ - text: Forum
+   url: /forum/
+   internal-link: yes
+
+# - text: About
+#   url: /about/
+#   internal-link: yes
+
