@@ -7,8 +7,8 @@ author: Nate
 This was my first attempt at building a whelping box many years ago:
 
 <figure>
-<a href="{{ site.baseurl }}/assets/whelping-box-001.jpg">
-<img src="{{ site.baseurl }}/assets/whelping-box-001.jpg" alt="Photo of first whelping box"/>
+<a href="/images/whelping-box-001.jpg">
+<img src="/images/whelping-box-001.jpg" alt="Photo of first whelping box"/>
 </a>
 <figcaption>The whelping box was functional, but unwieldy.</figcaption>
 </figure>
