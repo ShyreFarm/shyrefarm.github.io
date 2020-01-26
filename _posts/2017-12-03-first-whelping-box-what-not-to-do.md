@@ -1,7 +1,9 @@
 ---
+<!--
 layout: post
 title: First whelping box (what not to do)
 author: Nate
+-->
 ---
 
 This was my first attempt at building a whelping box many years ago:
