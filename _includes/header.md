@@ -1,2 +1,1 @@
-# [Shyre Farm](index.md)
-[About]
+-- [Shyre Farm](/) -- [About](/) --

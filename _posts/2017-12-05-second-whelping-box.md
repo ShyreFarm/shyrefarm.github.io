@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Second whelping box
-author: Nate
+author: nzurbrugg
+excerpt: An improvement.
 ---
 
 This was my second attempt at a whelping box:
 <figure>
-<a href="{{ "/assets/whelping-box-002.jpg" | relative_url }}">
-<img src="{{ "/assets/whelping-box-002.jpg" | relative_url }}" alt="Photo of second whelping box"/>
+<a href="/images/whelping-box-002.jpg">
+<img src="/images/whelping-box-002.jpg" alt="Photo of second whelping box"/>
 </a>
 <figcaption>This whelping box has served well through a number of litters, but still has room for improvement.</figcaption>
 </figure>

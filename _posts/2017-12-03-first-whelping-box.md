@@ -1,9 +1,8 @@
 ---
-<!--
 layout: post
-title: First whelping box (what not to do)
-author: Nate
--->
+title: First whelping box
+author: nzurbrugg
+excerpt: My first attempt at building a whelping box (or what not to do).
 ---
 
 This was my first attempt at building a whelping box many years ago:
@@ -16,7 +15,6 @@ This was my first attempt at building a whelping box many years ago:
 </figure>
 
 The walls were made of particle board from an old wardrobe closet.  The floor and pig rails were particle board as well.  The boards were screwed to 2x2 wood pieces aligned vertically in the corners.
-<!--read more-->
 
 The smooth laminate on the particle board was good for wiping clean, however the edges of the boards were not laminated and the edges began to deteriorate after multiple daily wipe downs.  Other than that, the structure held up well for a couple litters.  That is, except for the pig rails.  The adult dog tended to lean and sit on these, so having screws only along one edge of the board proved to be far too weak.
 

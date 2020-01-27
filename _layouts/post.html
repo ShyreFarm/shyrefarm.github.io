@@ -1,32 +1,17 @@
 ---
 layout: default
 ---
-<div class="page-wrap">
-<div class="post">
-  <a class="anchor" name="top"></a>
-  <div class="content">
-    <div class="post-info">
-        {% if page.author %}{{ page.author }}{% endif %}
-        {{ page.date | date: "%Y-%m-%d" }}
-      </div>
-      <div class="post-title">{{ page.title }}</div>
+<h1>{{ page.title }}</h1>
+<p>
+  {% if page.author %}
+    <a href="https://github.com/{{ page.author }}">
+      <img class="avatar" src="https://github.com/{{ page.author }}.png?size=40" alt="" width="40" height="40">
+    </a>
+    <a href="https://github.com/{{ page.author }}">
+      {{ page.author }}
+    </a>
+  {% endif %}
+  posted {{ page.date | date: "%b %d, %Y" }}
+</p>
 
-    {{ content }}
-  
-  </div>
-  
-  <a class="anchor" name="comments"></a>
-  <div class="comments">
-    <a class="muut",
-       href="https://muut.com/i/{{ site.muut-forum-title }}/blog-comments:{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify | truncate: 16, '' }}",
-       title="{{ page.title }} ({{ page.date | date: "%b %-d, %Y" }})",
-       data-show_online="false",
-       data-share="false">
-       Comments
-    </a>  
-  </div>
-</div>
-</div>
-
-<script src="//cdn.muut.com/1/moot.min.js"></script>
-
+{{ content }}
